@@ -18,7 +18,7 @@ class Table
     populate_seats
 
     loop do
-      play_round
+      play_round unless empty?
       populate_seats if add_more_players?
       break if empty?
     end
